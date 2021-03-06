@@ -3,7 +3,7 @@ Citation: Yuan, M.M., Guo, X., Wu, L. et al. Climate warming enhances microbial 
 
 Part of the analyses in this paper is available through the <b>Molecular Ecological Network Analysis Pipeline (MENAP)</b>: http://ieg4.rccc.ou.edu/MENA/. Results generated in MENAP is noted in the following instruction.
 
-## Instructions for generating result/figures in this manuscript:
+## Instructions for generating result/figures in this manuscript
 
 - Figure 1: MENAP - Global Network properties, Randomize the network structure and then calculate network properties, or through R package igraph
 - Figure 2: MENAP - Global Network properties, Randomize the network structure and then calculate network properties, or through R package igraph
@@ -27,7 +27,7 @@ Part of the analyses in this paper is available through the <b>Molecular Ecologi
 - Supplementary Figure 9: MENAP - Global Network properties, or through R package igraph
 - Supplementary Figure 10: FastSpar - Stephen C Watts, Scott C Ritchie, Michael Inouye, Kathryn E Holt, FastSpar: rapid and scalable correlation estimation for compositional data, Bioinformatics, Volume 35, Issue 6, 15 March 2019, Pages 1064–1066, https://doi.org/10.1093/bioinformatics/bty734, and MENAP - Global Network properties, or through R package igraph
 
-## Instructions for input data used in the code:
+## Instructions for input data used in the code
 
 - Fig3_and_S7.stability  
 <b>CorrelationMatrix_Y14_W.txt</b>: correlation matrix downloaded from MENAP, an upper triangle showing correlation values of OTU pairs, without header row or column names. The order of OTUs can also be downloaded from MENAP. Note that only OTUs occur more than 12 in 24 samples are included in correlation calculation in this study. Sample data is from Year 2014 warming plots.  
