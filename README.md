@@ -18,7 +18,7 @@ Instructions for generating result/figures in this manuscript:
 
 - Supplementary Figure 1: See folder FigS1.LTED
 - Supplementary Figure 2: Available through original study - Goberna, M, Montesinos‐Navarro, A, Valiente‐Banuet, A, et al. Incorporating phylogenetic metrics to microbial co‐occurrence networks based on amplicon sequences to discern community assembly processes. Mol Ecol Resour. 2019; 19: 1552– 1564. https://doi.org/10.1111/1755-0998.13079
-- Supplementary Figure 3: Available through R 
+- Supplementary Figure 3: Available through R
 - Supplementary Figure 4: Differential abundance analysis is available through the original study - Morton, J.T., Marotz, C., Washburne, A. et al. Establishing microbial composition measurement standards with reference frames. Nat Commun 10, 2719 (2019). https://doi.org/10.1038/s41467-019-10656-5, and Songbird software - https://github.com/biocore/songbird
 - Supplementary Figure 5: Available through R package igraph
 - Supplementary Figure 6: MENAP - Module-EigenGene analyses
@@ -29,24 +29,24 @@ Instructions for generating result/figures in this manuscript:
 
 Instructions for input data used in the code:
 
-- Fig3_and_S7.stability
-CorrelationMatrix_Y14_W.txt: correlation matrix downloaded from MENAP, an upper triangle showing correlation values of OTU pairs, without header row or column names. The order of OTUs can also be downloaded from MENAP. Note that only OTUs occur more than 12 in 24 samples are included in correlation calculation in this study. Sample data is from Year 2014 warming plots.
-OTUtable_NetworkedOTUs_AllSamples.txt: An OTU table containing the abundances of OTUs only occurred in each network. If an OTU is absent from a network, its abundance is set to zero in all samples from that year/treatment.
-SampleMap_AllSamples.txt: A metadata file containing treatment information of the samples in OTUtable_NetworkedOTUs_AllSamples.txt. Sample order in these two files should match.
-OTUtable_AllOTUs_Y14_W.txt: The original OTU table containing all the detected OTUs before construction of the network. Sample data is from Year 2014 warming plots.
-NodeAttribute_Y14_W.txt: Network node attribute table. Can be downloaded through MENAP. Sample data is from Year 2014 warming plots.
+- Fig3_and_S7.stability  
+<b>CorrelationMatrix_Y14_W.txt</b>: correlation matrix downloaded from MENAP, an upper triangle showing correlation values of OTU pairs, without header row or column names. The order of OTUs can also be downloaded from MENAP. Note that only OTUs occur more than 12 in 24 samples are included in correlation calculation in this study. Sample data is from Year 2014 warming plots.
+<b>OTUtable_NetworkedOTUs_AllSamples.txt</b>: An OTU table containing the abundances of OTUs only occurred in each network. If an OTU is absent from a network, its abundance is set to zero in all samples from that year/treatment.
+<b>SampleMap_AllSamples.txt</b>: A metadata file containing treatment information of the samples in OTUtable_NetworkedOTUs_AllSamples.txt. Sample order in these two files should match.
+<b>OTUtable_AllOTUs_Y14_W.txt</b>: The original OTU table containing all the detected OTUs before construction of the network. Sample data is from Year 2014 warming plots.
+<b>NodeAttribute_Y14_W.txt</b>: Network node attribute table. Can be downloaded through MENAP. Sample data is from Year 2014 warming plots.
 
-- ExtendedDataFig3.module_preservation
-NetworkNodeTable_AllNetworks.txt: Network node attribute table from all the networks.
+- ExtendedDataFig3.module_preservation  
+<b>NetworkNodeTable_AllNetworks.txt</b>: Network node attribute table from all the networks.
 
-- ExtendedDataFig5.constancy
-OTUtable_NetworkedOTUs_AllSamples.txt: An OTU table containing the abundances of OTUs only occurred in each network. If an OTU is absent from a network, its abundance is set to zero in all samples from that year/treatment.
-SampleMap_AllSamples.txt: A metadata file containing treatment information of the samples in OTUtable_NetworkedOTUs_AllSamples.txt. Sample order in these two files should match.
-NetworkNodeTable_AllNetworks.txt: Network node attribute table from all the networks.
-NetworkEdgeTable_AllNetworks.txt: Network edge attribute table from all the networks.
+- ExtendedDataFig5.constancy  
+<b>OTUtable_NetworkedOTUs_AllSamples.txt</b>: An OTU table containing the abundances of OTUs only occurred in each network. If an OTU is absent from a network, its abundance is set to zero in all samples from that year/treatment.
+<b>SampleMap_AllSamples.txt</b>: A metadata file containing treatment information of the samples in OTUtable_NetworkedOTUs_AllSamples.txt. Sample order in these two files should match.
+<b>NetworkNodeTable_AllNetworks.txt</b>: Network node attribute table from all the networks.
+<b>NetworkEdgeTable_AllNetworks.txt</b>: Network edge attribute table from all the networks.
 
-- FigS1.LTED
-OTUtable_AllOTUs_Y14_W.txt: The original OTU table containing all the detected OTUs before construction of the network. Sample data is from Year 2014 warming plots.
-EnvironemtnalVariables_Y14_W.tsv: Environmental variable values for each sample. Sample data is from Year 2014 warming plots.
-Distance_Y14_W.tsv: Two dimensional geodistance in meters, from the center of each plot to a defined origin (in this case the center of Plot 1 in our field experiment setting. Sample data is from Year 2014 warming plots.
-NetworkEdgeTable_Y14_W.txt: Network edge attribute table. Can be downloaded through MENAP. Sample data is from Year 2014 warming plots.
+- FigS1.LTED  
+<b>OTUtable_AllOTUs_Y14_W.txt</b>: The original OTU table containing all the detected OTUs before construction of the network. Sample data is from Year 2014 warming plots.
+<b>EnvironemtnalVariables_Y14_W.tsv</b>: Environmental variable values for each sample. Sample data is from Year 2014 warming plots.
+<b>Distance_Y14_W.tsv</b>: Two dimensional geodistance in meters, from the center of each plot to a defined origin (in this case the center of Plot 1 in our field experiment setting. Sample data is from Year 2014 warming plots.
+<b>NetworkEdgeTable_Y14_W.txt</b>: Network edge attribute table. Can be downloaded through MENAP. Sample data is from Year 2014 warming plots.
