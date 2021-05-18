@@ -1,4 +1,4 @@
-This repository contains code used to generate results and figures for the manuscript "Computer code for the manuscript "Climate Warming Enhances Microbial Network Complexity and Stability".
+This repository contains code used to generate results and figures for the manuscript "Climate Warming Enhances Microbial Network Complexity and Stability".
 Citation: Yuan, M.M., Guo, X., Wu, L. et al. Climate warming enhances microbial network complexity and stability. Nat. Clim. Chang. (2021). https://doi.org/10.1038/s41558-021-00989-9
 
 Part of the analyses in this paper is available through the <b>Molecular Ecological Network Analysis Pipeline (MENAP)</b>: http://ieg4.rccc.ou.edu/MENA/. Results generated in MENAP is noted in the following instruction.

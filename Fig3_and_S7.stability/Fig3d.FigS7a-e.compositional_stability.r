@@ -1,12 +1,13 @@
 # contributor: Daliang Ning
 
+source("/Users/maggieyuan/Documents/!annual_network/GitHub/Fig3_and_S7.stability/iieggrtools.r")
+
 wd="/Users/maggieyuan/Documents/!annual_network/GitHub/Fig3_and_S7.stability/"
 
 com.file="input_file/OTUtable_NetworkedOTUs_AllSamples.txt"
 treat.file="input_file/SampleMap_AllSamples.txt"
 
 #####################
-library(ieggr)
 wd=iwd(wd)
 
 comm=t(lazyopen(com.file))
@@ -152,15 +153,15 @@ syms = c(1,1,1,1,1, 19,19,19,19,19)
 plot_cs <- function(yw, yc, ebw, ebc){
   x=c(1,2,3,4,5)
   yl=c(min(c(yw-ebw,yc-ebc)), max(c(yw+ebw,yc+ebc)))
-  
+
   plot(yw~x, ylim=yl, ylab="Compositional stability", xlab="Year of warming", pch=19, cex.axis=0.7, cex.lab=0.7, tck=-0.03, col="red")
   abline(lm(yw~x), col="red")
   arrows(x, yw-ebw, x, yw+ebw, length=0.05, angle=90, code=3, col="red")
-  
+
   points(yc~x, col="blue")
   abline(lm(yc~x), lty=2, col="blue")
   arrows(x, yc-ebc, x, yc+ebc, length=0.05, angle=90, code=3, col="blue")
-  
+
   txt1 = get_text(yw,x)
   txt2 = get_text(yc,x)
   mtext(txt1, side=3, line=0.8, cex=0.5, col="red")
@@ -171,7 +172,7 @@ zeta2 = cs.long[grep("Zeta2", cs.long$year),]
 zeta2_means = aggregate(zeta2$cs, list(zeta2$Warming, zeta2$EndYear), FUN=mean)
 zeta2_sds = aggregate(zeta2$cs, list(zeta2$Warming, zeta2$EndYear), FUN=sd)
 
-plot_cs(yw=zeta2_means$x[which(zeta2_means$Group.1=="W")], 
-        yc=zeta2_means$x[which(zeta2_means$Group.1=="N")], 
-        ebw=zeta2_sds$x[which(zeta2_sds$Group.1=="W")], 
+plot_cs(yw=zeta2_means$x[which(zeta2_means$Group.1=="W")],
+        yc=zeta2_means$x[which(zeta2_means$Group.1=="N")],
+        ebw=zeta2_sds$x[which(zeta2_sds$Group.1=="W")],
         ebc=zeta2_sds$x[which(zeta2_sds$Group.1=="N")])
