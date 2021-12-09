@@ -5,7 +5,7 @@ Part of the analyses in this paper is available through the <b>Molecular Ecologi
 
 ## Updates
 
-2021.12.8 Bug fix in FigS1.LTED/FigS1ab.find_env_links_example.sh and FigS1.LTED/FigS1ab.find_env_links.py
+2021.12.8 Bug fix in FigS1.LTED/FigS1ab.find_env_links_example.sh and FigS1.LTED/FigS1ab.find_env_links.py  
 
 
 ## Instructions for generating result/figures in this manuscript
