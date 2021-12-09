@@ -64,9 +64,8 @@ def read_otus(otu_path, otus_sub=None):
 						rownames.append(items[0])
 						otu_abunds.append([float(item) for item in items[1:]])
 
-	
-	np_order = np.argsort(header)
-	header_np = np.array(header)[np_order]
+	np_order = np.argsort(header[1:])
+	header_np = np.array(header[1:])[np_order]
 	otu_abunds_np = np.array(otu_abunds)[:,np_order]
 
 	return header_np, np.array(rownames), otu_abunds_np

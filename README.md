@@ -3,6 +3,11 @@ Citation: Yuan, M.M., Guo, X., Wu, L. et al. Climate warming enhances microbial 
 
 Part of the analyses in this paper is available through the <b>Molecular Ecological Network Analysis Pipeline (MENAP)</b>: http://ieg4.rccc.ou.edu/MENA/. Results generated in MENAP is noted in the following instruction.
 
+## Updates
+
+2021.12.8 Bug fix in FigS1.LTED/FigS1ab.find_env_links_example.sh and FigS1.LTED/FigS1ab.find_env_links.py  
+
+
 ## Instructions for generating result/figures in this manuscript
 
 - Figure 1: MENAP - Global Network properties, Randomize the network structure and then calculate network properties, or through R package igraph
